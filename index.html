@@ -328,7 +328,7 @@
             const startDayOfWeek = firstDay.getDay(); // 0 = Domingo
             const daysInMonth = lastDay.getDate();
 
-            let html = `<div class="flex-1 min-w-[140px] bg-slate-50 rounded-lg p-2 border border-slate-100 snap-center">`;
+            let html = `<div class="bg-slate-50 rounded-lg p-2 border border-slate-100">`;
             html += `<div class="text-[10px] font-bold text-slate-600 mb-1 text-center">${monthNames[month]}</div>`;
             
             // Header Dias
@@ -383,7 +383,7 @@
             
             let html = `<div class="mt-4 border-t border-slate-100 pt-3">
                 <p class="text-[9px] text-slate-400 mb-2 uppercase font-bold tracking-wider">Dias Considerados</p>
-                <div class="flex gap-2 overflow-x-auto pb-2 no-scrollbar snap-x">`;
+                <div class="grid grid-cols-2 gap-2">`;
 
             let curYear = s.getFullYear();
             let curMonth = s.getMonth();
